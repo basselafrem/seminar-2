@@ -1,0 +1,278 @@
+
+
+* {
+  box-sizing: border-box;
+}
+th, td {
+	text-align: left;
+	font-weight: normal;
+        border: 1px solid gray
+}
+ul{
+    list-style-type: decimal;
+}
+
+html, body, div, span
+h1, h2, h3, h4, h6,
+a
+{
+        margin: 0px;
+        padding:5px;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+h2{
+    font-size: 2em;
+    color:darkblue;
+    font-family: "Arial Rounded MT Bold";
+}
+h3{
+    font-size: 1.5em;
+     color:black;
+    font-weight: bold;
+}
+p{
+    font-size: 1em;
+    font-family:  "Times New Roman", Times, serif;
+    font-weight: bold;
+}
+
+body{
+    line-height: 1;
+    color: black;
+    background: url("background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+
+#header{
+    color: black;
+    text-align: center;
+    font-family: Arial;
+    background-image: url("piclhmQsc.jpg");
+    border-style: solid;
+    border-radius: 20px; 
+    margin:20px;
+}
+#contentt{
+    padding:0px;
+    margin:10px;
+    height: 100%;
+   
+}
+#nav{
+    float: left;
+    color: black;
+}
+
+#tasty{
+    padding:0;
+    margin:0;
+    float: right;   
+}
+#comment{
+    padding:20px;
+    
+}
+#footer{
+   clear:both;
+   color:black;
+   font-weight: bold;  
+}
+.title {
+    font: x-large Verdana, Arial, Helvetica, sans-serif;
+    text-align: center;
+    height: 40px;
+    color: black;
+    }
+table {
+    
+    border-collapse: separate;
+    border-spacing: 0;
+    font: 100% Verdana, Arial, Helvetica, sans-serif;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border: 1px solid black;
+    width: 100%;
+    }
+/* Styling for the column headers (days of the week) */
+th {
+    padding: 0 0.5em;
+    text-align: center;
+    background-color:gray;
+    color:black;
+    }
+/* Styling for the individual cells (days) */
+td  {     
+    font-size: medium;
+    padding: 0.25em 0.25em;   
+    width: 14%; 
+    height: 80px;
+    text-align: left;
+    vertical-align: top;
+    color: black;
+    }
+/* Styling for the date numbers */
+.date  {     
+    font-size: large;
+    padding: 0.25em 0.25em;   
+    text-align: left;
+    vertical-align: top;
+    }
+/* Class for individual days (coming in future release) */
+.sun {
+     color: red;
+     }
+/* Hide the month element (coming in future release) */
+th.month {
+    visibility: hidden;
+    display:none;
+    }
+.imgcalmeatballs{
+        
+        background-image: url("meatballs.jpg");  
+        background-position: center;
+        background-size: cover;
+    }
+.imgcalpancakes{
+        background-image: url("pannkakor1.jpg");
+        background-position: center;
+        background-size: cover;
+    }
+.imgrecipe{ 
+    height: 500px;
+    width: 600px;
+    border:solid;
+    border-radius: 50px;
+}
+.imagehome{
+        height: 500px;
+        width: 600px;
+        border:solid;
+        border-radius: 50px;
+      
+    }
+     @media screen and (min-width:640px){
+        #container, #contentt,#header,#footer{
+            width:100%;
+            height:100%;
+        }
+        #nav{
+            width:45%;
+                height:100% ;
+        }
+        #tasty{
+            width:55%;
+            height: 100%;
+                
+        }
+       
+        img, body,table{
+            width:100%;
+            height:100%;
+        }
+        .imagehome,.imgcalmeatballs,.imgcalpancakes,.imgrecipe{
+            width:100%;
+            height:100%;
+        }
+       
+    }
+  
+    @media screen and (max-width:640px){
+        #tasty, #nav{
+            width:100%;
+        } 
+         img, body,table{
+            width:100%;
+            height:100%;
+        }
+        .imagehome,.imgcalmeatballs,.imgcalpancakes,.imgrecipe{
+            width:100%;
+            height:100%;
+        }
+        #container, #contentt,#header,#footer{
+            width:100%;
+            height:100%;
+        }
+    }
+    .btn {
+  background: #b5e4ff;
+  background-image: -webkit-linear-gradient(top, #b5e4ff, #fcf7fc);
+  background-image: -moz-linear-gradient(top, #b5e4ff, #fcf7fc);
+  background-image: -ms-linear-gradient(top, #b5e4ff, #fcf7fc);
+  background-image: -o-linear-gradient(top, #b5e4ff, #fcf7fc);
+  background-image: linear-gradient(to bottom, #b5e4ff, #fcf7fc);
+  -webkit-border-radius: 28px;
+  -moz-border-radius: 28px;
+  border-radius: 28px;
+  font-family: Georgia;
+  color: #0f0c0f;
+  font-size: 12px;
+  padding: 11px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #8ad2ff;
+  background-image: -webkit-linear-gradient(top, #8ad2ff, #99d6ff);
+  background-image: -moz-linear-gradient(top, #8ad2ff, #99d6ff);
+  background-image: -ms-linear-gradient(top, #8ad2ff, #99d6ff);
+  background-image: -o-linear-gradient(top, #8ad2ff, #99d6ff);
+  background-image: linear-gradient(to bottom, #8ad2ff, #99d6ff);
+  text-decoration: none;
+}
+/*signup.php*/
+.signup-form {
+width: 400px;
+margin:0 auto;
+padding-top:30px;
+}
+
+.signup-form input {
+width: 90%;
+height:40px;
+margin-right:10px;
+padding: 0px 5%;
+border:none;
+background-color: #fff;
+font-family: arial;
+font-size: 16px;
+color:#111;
+line-height: 40px;
+}
+
+.signup-form input {
+width: 90%;
+height:40px;
+margin-right:10px;
+padding: 0px 5%;
+border:none;
+background-color: #fff;
+font-family: arial;
+font-size: 16px;
+color:#111;
+line-height: 40px;
+
+}
+.signup-form button {
+display:block;
+margin: 0 auto;
+width: 30%;
+height:40px;
+border:none;
+background-color: #222;
+font-family: arial;
+font-size: 16px;
+color:#fff;
+cursor:pointer;
+
+}
+.singup-form button:hover {
+    background-color: #111;
+}
