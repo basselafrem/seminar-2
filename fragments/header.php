@@ -2,7 +2,7 @@
 session_start();
 ob_start();
 
- include 'databases/dbh.php';
+ include_once 'databases/dbh.php';
 
 
 ?>

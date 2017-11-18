@@ -2,7 +2,7 @@
 
 include 'fragments/header.php';
 ?>
-<div class="form">
+<div >
     <h1>Error</h1>
     <p>
     <?php 

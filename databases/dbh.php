@@ -16,7 +16,7 @@ $db = "mysql";*/
 
 
 // Create connection
-$conn = mysqli_connect("localhost", "root", "password", "mysql");
+$conn = mysqli_connect("localhost", "root", "password", "users");
 
 // Check connection
 /*if ($conn->connect_error) {
