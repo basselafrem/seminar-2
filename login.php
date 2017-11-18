@@ -1,13 +1,12 @@
 <?php
 session_start();
 ob_start();
-
 ?>
 
 
 <?php
 if(isset($_POST['submitLogin'])){
-    include 'dbh.php';
+    include 'databases/dbh.php';
   
     
     $uid = mysqli_real_escape_string($conn, $_POST['uid']);
@@ -16,30 +15,24 @@ if(isset($_POST['submitLogin'])){
     //Error handlers
     //Check if input are empty
     if(empty($uid) || empty($pwd)){
-        header("Location: index.php?login=empty");
+        header("Location: index.php?login=emptyfields");
         exit();
         
     }else{
           $sql = "SELECT * FROM users WHERE user_uid='$uid'";
-                    $result = mysqli_query($conn, $sql);
-                    $resultCheck = mysqli_num_rows($result);
+          $result = mysqli_query($conn, $sql);
+          $resultCheck = mysqli_num_rows($result);
        
         if($resultcheck < 1){
-      
-                    
-                    
-            
-             
-           header("Location: error.php");
-                
-            exit();
+           header("Location: error.php?error=nouserfound");  
+           exit();
         
         }else{ 
             if($row  == mysqli_fetch_assoc($result)){
                 //dehashing the password 
                 $hashedPwdCheck = password_verify($pwd,$row['user_pwd']);
             if($hashedPwdCheck == false){
-                header("Location: signup.php?password=wrong");
+                header("Location: error.php?password=wrong");
                 exit();
             }else {
                 //log in the user here 

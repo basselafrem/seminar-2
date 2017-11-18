@@ -43,7 +43,7 @@ p{
 body{
     line-height: 1;
     color: black;
-    background: url("background.jpg");
+    background: url("/imagesbackground.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -55,7 +55,7 @@ body{
     color: black;
     text-align: center;
     font-family: Arial;
-    background-image: url("piclhmQsc.jpg");
+    background-image: url("images/piclhmQsc.jpg");
     border-style: solid;
     border-radius: 20px; 
     margin:20px;
@@ -136,12 +136,12 @@ th.month {
     }
 .imgcalmeatballs{
         
-        background-image: url("meatballs.jpg");  
+        background-image: url("images/meatballs.jpg");  
         background-position: center;
         background-size: cover;
     }
 .imgcalpancakes{
-        background-image: url("pannkakor1.jpg");
+        background-image: url("images/pannkakor1.jpg");
         background-position: center;
         background-size: cover;
     }
@@ -272,7 +272,4 @@ font-size: 16px;
 color:#fff;
 cursor:pointer;
 
-}
-.singup-form button:hover {
-    background-color: #111;
 }

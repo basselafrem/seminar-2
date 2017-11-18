@@ -1,5 +1,5 @@
 <?php
-include_once 'header.php';
+include_once 'fragments/header.php';
 ?>
 
 
@@ -11,7 +11,7 @@ include_once 'header.php';
         <input type="text" name="email" placeholder="Email">
         <input type="text" name="uid" placeholder="User Name">
         <input type="password" name="pwd" placeholder="Password">
-        <button type="submit" name="submitSignup">Signup</button> 
+        <button class='btn' type="submit" name="submitSignup">Signup</button> 
     </form>
     
 </div>
@@ -19,6 +19,6 @@ include_once 'header.php';
 
 
 <?php
-include_once 'footer.php';
+include_once 'fragments/footer.php';
 ?>
 

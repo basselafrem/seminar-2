@@ -1,16 +1,9 @@
 <?php
-session_start();
-ob_start();
-?>
+include_once 'fragments/header.php';
 
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Error</title>
- 
-</head>
-<body>
-<div class="form">
+
+?>
+<div >
     <h1>Error</h1>
     <p>
     <?php 
@@ -22,8 +15,11 @@ ob_start();
     endif;
     ?>
     </p>     
-    <a href="index.php"><button />Home</button></a>
+    <a href="index.php"><button class="btn">Home</button></a>
 </div>
-</body>
-</html>
+
+
+   <?php
+include_once 'fragments/footer.php';
+?>
 

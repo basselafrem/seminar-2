@@ -1,12 +1,10 @@
 <?php
-    include_once 'header.php';
+    include_once 'fragments/header.php';
     date_default_timezone_set('Europe/Stockholm');
-    include 'comdbh1.php';
+    include '/databases/comdbh1.php';
     include 'comments.php';
 
 ?>
-
-
 
  <div id="contentt">
             <div id="nav">
@@ -41,7 +39,7 @@
             </div>
             <div id="tasty"> 
                 
-                <img class="imgrecipe" src="meatballs.jpg" alt="meatballs"  >
+                <img class="imgrecipe" src="images/meatballs.jpg" alt="meatballs"  >
                 <?php
                 if(isset($_SESSION['id'])){
                     echo "<form method='POST' action='".setComments($conn,'meatballscomments')."' >
@@ -55,7 +53,7 @@
                             echo "
                             <textarea name='message'></textarea><br>
                             <button>Comment</button>
-                                ";;
+                                ";
                        }
                        getComments($conn, 'meatballscomments');
 
@@ -65,7 +63,7 @@
      
      
 <?php
-include_once 'footer.php';
+include_once 'fragments/footer.php';
 ?>
 
 

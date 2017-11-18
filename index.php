@@ -1,13 +1,12 @@
 <?php
-include_once 'header.php';
-ob_start();
+include_once 'fragments/header.php';
+
 
 ?>
 
 
 <div id="contentt">
             <div id="nav">
-                 
                  
                 <h2>The Tasty Recipes </h2>
                 <p>Welcome to our web site where you will find the most delicious recipes.</p>
@@ -24,5 +23,5 @@ ob_start();
 
 
 <?php
-include_once 'footer.php';
+include_once 'fragments/footer.php';
 ?>

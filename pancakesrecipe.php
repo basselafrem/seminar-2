@@ -1,8 +1,8 @@
 <?php
-include_once 'header.php';
+include_once 'fragments/header.php';
 date_default_timezone_set('Europe/Stockholm');
-                    include 'comdbh2.php';
-                    include 'comments.php';
+include 'databases/comdbh2.php';
+include 'comments.php';
                     
 
 ?>
@@ -38,7 +38,7 @@ date_default_timezone_set('Europe/Stockholm');
             </div>
             <div id="tasty"> 
                 
-                <img class="imgrecipe" src="pannkakor1.jpg" alt="pancakes"  >
+                <img class="imgrecipe" src="images/pannkakor1.jpg" alt="pancakes"  >
                 <?php
                     
                   if(isset($_SESSION['u_id'])){
@@ -65,6 +65,6 @@ date_default_timezone_set('Europe/Stockholm');
          
 
 <?php
-include_once 'footer.php';
+include_once 'fragments/footer.php';
 ?>
 

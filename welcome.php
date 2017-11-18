@@ -1,6 +1,6 @@
 <?php
 
-include 'header.php';
+include 'fragments/header.php';
 ?>
 <div class="form">
     <h1>Error</h1>
@@ -18,6 +18,6 @@ include 'header.php';
 </div>
 
 <?php
-include_once 'footer.php';
+include_once 'fragments/footer.php';
 ?>
 

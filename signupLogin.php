@@ -1,8 +1,8 @@
 <?php
 
-include 'header.php';
+include 'fragments/header.php';
 ?>
-<div class="form">
+<div >
     <h1>Error</h1>
     <p>
     <?php 
@@ -15,10 +15,10 @@ include 'header.php';
     endif;
     ?>
     </p>     
-    <a href="index.php"><button />Home</button></a>
+    <a href="index.php"><button class="btn">Home</button></a>
 </div>
 
 <?php
-include_once 'footer.php';
+include_once 'fragments/footer.php';
 ?>
 

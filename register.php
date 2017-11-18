@@ -2,7 +2,7 @@
 ob_start();
 
 if(null !==filter_input(INPUT_POST,'submitSignup')){
-    include_once 'dbh.php';
+    include_once 'databases/dbh.php';
     
     $first = mysqli_real_escape_string($conn,filter_input(INPUT_POST,'first'));
     $last = mysqli_real_escape_string($conn, filter_input(INPUT_POST,'last'));
@@ -14,19 +14,19 @@ if(null !==filter_input(INPUT_POST,'submitSignup')){
     //Check for empty fields
     if(empty($first) || empty($last) || empty($email) || empty($uid) || empty($pwd)){
         
-        header("Location: ./signup.php?signup=empty");
+        header("Location: error.php?signup=empty");
         
         
    }else{
         //Check if input charachters are valid
             if(!preg_match("/^[a-zA-Z]*$/", $first) || preg_match("/^[a-z][A-Z]*$/", $last)){
         
-                    header("Location: ./signup.php?signup=invalid");
+                    header("Location: error.php?signup=invalid");
                     
             }else{
                 //check if email is valid
                 if(!filter_var($email,FILTER_VALIDATE_EMAIL)){
-                    header("Location: ./signup.php?signup=email");
+                    header("Location: error.php?signup=email");
                     
           
                 }else{
@@ -58,6 +58,6 @@ if(null !==filter_input(INPUT_POST,'submitSignup')){
     
     
 }else{
-    header("Location: ./signup.php?error");
+    header("Location: error.php?error=tryagain");
     
 }

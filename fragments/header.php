@@ -2,7 +2,7 @@
 session_start();
 ob_start();
 
- include 'dbh.php';
+ include 'databases/dbh.php';
 
 
 ?>
@@ -30,7 +30,7 @@ ob_start();
       <?php
       if(isset($_SESSION['u_id'])){
           echo "<form action='logout.php' method='POST'>
-            <button type='submit' name='submitLogout'>Logout</button>
+            <button class='btn' type='submit' name='submitLogout'>Logout</button>
              </form>";
       
         
@@ -38,10 +38,10 @@ ob_start();
       echo "<form action='login.php' method='POST'>
             <input type='text' name='uid' placeholder='Username'>
             <input type='password' name='pwd' placeholder='Password'>
-            <button type='submit' name='submitLogin'>Login</button>
+            <button class='btn' type='submit' name='submitLogin'>Login</button>
       </form>";}
       echo "<form action='signup.php' method='POST'>
-                 <button  type='submit' name='submit'>SignUp</button>
+                 <button class='btn' type='submit' name='submit'>SignUp</button>
                  </form>";
         
          
