@@ -6,11 +6,11 @@ ob_start();
 
 <?php
 if(isset($_POST['submitLogin'])){
-    include 'databases/dbh.php';
+    include 'databases/dbh.php' ;
   
     
-    $uid = mysqli_real_escape_string($conn, $_POST['uid']);
-    $pwd = mysqli_real_escape_string($conn, $_POST['pwd']);
+    $uid = mysqli_real_escape_string($conn, $_POST['u_uid']);
+    $pwd = mysqli_real_escape_string($conn, $_POST['u_pwd']);
     
     //Error handlers
     //Check if input are empty
@@ -22,7 +22,8 @@ if(isset($_POST['submitLogin'])){
           $sql = "SELECT * FROM users WHERE user_uid='$uid' OR user_email='$uid'";
           $result = mysqli_query($conn, $sql);
           $resultCheck = mysqli_num_rows($result);
-       
+          
+       //If numbers of rows retrived is less than 1, no user found
         if($resultcheck < 1){
            header("Location: error.php?error=nouserfound");  
            exit();

@@ -1,5 +1,7 @@
 <?php
 
+
+
 //$dbServername = "localhost";
 //$dbUsername = "root";
 //$dbPassword = "";
@@ -7,14 +9,14 @@
  
 //$conn = mysqli_connect($dbServername, $dbUsername, $dbPassword, $dbName);
 
-$servername = "localhost";
+/*$servername = "localhost";
 $username = "root";
 $password = "password";
-$db = "mysql";
+$db = "mysql";*/
 
 
 // Create connection
-$conn = mysqli_connect("Localhost", "root", "password", "mysql");
+$conn = mysqli_connect("localhost", "root", "password", "mysql");
 
 // Check connection
 /*if ($conn->connect_error) {

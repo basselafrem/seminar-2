@@ -2,7 +2,7 @@
 ob_start();
 
 if(null !==filter_input(INPUT_POST,'submitSignup')){
-    include_once 'databases/dbh.php';
+    include 'databases/dbh.php';
     
     $first = mysqli_real_escape_string($conn,filter_input(INPUT_POST,'first'));
     $last = mysqli_real_escape_string($conn, filter_input(INPUT_POST,'last'));

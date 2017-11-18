@@ -43,7 +43,7 @@ p{
 body{
     line-height: 1;
     color: black;
-    background: url("/imagesbackground.jpg");
+    background-image: url("images/background.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;

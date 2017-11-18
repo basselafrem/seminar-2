@@ -36,8 +36,8 @@ ob_start();
         
       }else{
       echo "<form action='login.php' method='POST'>
-            <input type='text' name='uid' placeholder='Username'>
-            <input type='password' name='pwd' placeholder='Password'>
+            <input type='text' name='u_uid' placeholder='Username or Email'>
+            <input type='password' name='u_pwd' placeholder='Password'>
             <button class='btn' type='submit' name='submitLogin'>Login</button>
       </form>";}
       echo "<form action='signup.php' method='POST'>

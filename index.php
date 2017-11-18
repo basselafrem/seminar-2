@@ -17,7 +17,7 @@ include_once 'fragments/header.php';
                 
             </div>
             <div id="tasty"> 
-                <img class="imagehome" src="swedishfood.jpg" alt="swedish food image"  >
+                <img class="imagehome" src="images/swedishfood.jpg" alt="swedish food image"  >
             </div>
         </div>
 
