@@ -19,7 +19,7 @@ if(isset($_POST['submitLogin'])){
         exit();
         
     }else{
-          $sql = "SELECT * FROM users WHERE user_uid='$uid'";
+          $sql = "SELECT * FROM users WHERE user_uid='$uid' OR user_email='$uid'";
           $result = mysqli_query($conn, $sql);
           $resultCheck = mysqli_num_rows($result);
        
