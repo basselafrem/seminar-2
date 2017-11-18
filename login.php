@@ -43,7 +43,7 @@ if(isset($_POST['submitLogin'])){
                 $_SESSION[u_email] = $row['user_email'];
                 $_SESSION[u_uid] = $row['user_uid'];
                 
-                header("Location : welcome.php");
+                header("Location: welcome.php");
                 exit();
                    
               

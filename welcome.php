@@ -14,7 +14,7 @@ include 'fragments/header.php';
     endif;
     ?>
     </p>     
-    <a href="index.php"><button />Home</button></a>
+    <a href="index.php"><button class="btn">Home</button></a>
 </div>
 
 <?php
