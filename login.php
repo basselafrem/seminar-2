@@ -30,7 +30,7 @@ if(isset($_POST['submitLogin'])){
            exit();
         
         }else{ 
-            if($row  == mysqli_fetch_assoc($result)){
+            if($row = mysqli_fetch_assoc($result)){
                 //dehashing the password 
                 $hashedPwdCheck = password_verify($pwd,$row['user_pwd']);
             if($hashedPwdCheck == false){

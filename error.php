@@ -1,8 +1,8 @@
 <?php
 include_once 'fragments/header.php';
-
-
 ?>
+
+
 <div >
     <h1>Error</h1>
     <p>
@@ -19,7 +19,7 @@ include_once 'fragments/header.php';
 </div>
 
 
-   <?php
+<?php
 include_once 'fragments/footer.php';
 ?>
 

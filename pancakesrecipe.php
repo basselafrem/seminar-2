@@ -44,17 +44,15 @@ include 'comments.php';
                   if(isset($_SESSION['u_id'])){
 
                     echo "<form method='POST' action='".setComments($conn,'pancakescomments')."' >
-                            <input type='hidden' name='uid' value='bassel'>
+                            <input type='hidden' name='uid' value='".$_SESSION['u_uid']."'>
                             <input type='hidden' name='date' value='".date('Y-m-d H:i:s')."'>
                             <textarea name='message'></textarea><br>
                             <button class='btn'  type='submit' name='commentSubmit'>Comment</button>
                         </form>";
                        }else{
                           echo "<h3>You need to log in to comment</h3>";
-                             echo "
-                            <textarea name='message'></textarea><br>
-                            <button class='btn'>Comment</button>
-                                ";
+                             echo "<textarea name='message'></textarea><br>
+                                   <button class='btn'>Comment</button>";
                         }
                       getComments($conn, 'pancakescomments');
                     

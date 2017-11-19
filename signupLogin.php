@@ -1,7 +1,8 @@
 <?php
-
 include 'fragments/header.php';
 ?>
+
+
 <div >
     <h1>Error</h1>
     <p>
@@ -17,6 +18,8 @@ include 'fragments/header.php';
     </p>     
     <a href="index.php"><button class="btn">Home</button></a>
 </div>
+
+
 
 <?php
 include_once 'fragments/footer.php';
