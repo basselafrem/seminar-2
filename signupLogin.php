@@ -4,7 +4,7 @@ include 'fragments/header.php';
 
 
 <div >
-    <h1>Error</h1>
+    
     <p>
     <?php 
     if( isset($_SESSION['message']) AND !empty($_SESSION['message']) ): 

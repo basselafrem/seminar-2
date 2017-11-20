@@ -3,7 +3,6 @@
     date_default_timezone_set('Europe/Stockholm');
     include '/databases/comdbh1.php';
     include 'comments.php';
-
 ?>
 
  <div id="contentt">
