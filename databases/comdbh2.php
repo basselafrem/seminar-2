@@ -1,4 +1,4 @@
 <?php
 
 
-$conn = mysqli_connect('localhost', 'root', 'password', 'pancakescomments');
+$db2 = mysqli_connect('localhost', 'root', 'password', 'pancakescomments');

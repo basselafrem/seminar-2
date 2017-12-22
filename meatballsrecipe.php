@@ -1,8 +1,9 @@
 <?php
     include_once 'fragments/header.php';
     date_default_timezone_set('Europe/Stockholm');
-    include '/databases/comdbh1.php';
-    include 'comments.php';
+    include 'databases/comdbh1.php';
+    include 'getComment.php';
+  
 ?>
 
  <div id="contentt">
@@ -41,18 +42,17 @@
                 <img class="imgrecipe" src="images/meatballs.jpg" alt="meatballs"  >
                 <?php
                 if(isset($_SESSION['u_id'])){
-                    echo "<form method='POST' action='".setComments($conn,'meatballscomments')."' >
+                    echo "<form method='POST' action='setComment.php' >
                             <input type='hidden' name='uid' value='".$_SESSION['u_uid']."'>
                             <input type='hidden' name='date' value='".date('Y-m-d H:i:s')."'>
                             <textarea name='message'></textarea><br>
-                            <button class='btn' type='submit' name='commentSubmit'>Comment</button>
+                            <button class='btn' type='submit' name='meatballsSubmit'>Comment</button>
                         </form>";
                        }else{
                              echo "<h3>You need to log in to comment</h3>";
-                             echo "<textarea name='message'></textarea><br>
-                                   <button class='btn' >Comment</button>";
+                             echo "<textarea name='message'></textarea><br>";
                        }
-                       getComments($conn, 'meatballscomments');
+                      meatballsComments($db1, 'meatballscomments');
 
                 ?>
             </div>

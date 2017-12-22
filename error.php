@@ -18,7 +18,6 @@ include_once 'fragments/header.php';
     <a href="index.php"><button class="btn">Home</button></a>
 </div>
 
-
 <?php
 include_once 'fragments/footer.php';
 ?>
